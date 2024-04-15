@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+</head>
+<body>
+<input type="number" id="number" placeholder="Nhập số">
+<button onclick="factorial()">Calculate</button>
+<script>
+    function factorial(){
+        let num = +document.getElementById("number").value;
+        let fact = 1;
+        if(num===0){
+            document.writeln("0! ="+fact);
+        } else if (num >0) {
+            for (let i = 1; i <= num; i++) {
+                fact = fact*i;
+            }
+            document.writeln(num +"! ="+fact);
+        } else {
+            alert("Nhập vào số nguyên dương!");
+        }
+    }
+</script>
+</body>
+</html>

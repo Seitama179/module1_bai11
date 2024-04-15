@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap n so can in");
+    let start = +prompt("nhap so bat dau");
+    let count = 0;
+    while (count<n){
+        if(start%3 ===0){
+            if(start%5 ===0){
+                document.writeln("FizzBuzz"+"<br>");
+                count++;
+                start++;
+            } else {
+                document.writeln("Fizz"+"<br>");
+                count++;
+                start++
+            }
+        } else if(start%5 ===0){
+            document.writeln("Buzz"+"<br>");
+            count++;
+            start++
+        } else {
+            document.writeln(start+"<br>");
+            count++;
+            start++;
+        }
+    }
+</script>
+</body>
+</html>

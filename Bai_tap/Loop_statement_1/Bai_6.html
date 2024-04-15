@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập n số đầu tiên chia hết cho 7");
+    let count = 0;
+    let start = +prompt("Nhập số bắt đầu")
+    let sum = 0;
+    while (count<n){
+        if (start%7 ===0){
+            sum = sum+start;
+            count++;
+        }
+        start++;
+    }
+    document.writeln(sum);
+
+
+</script>
+</body>
+</html>

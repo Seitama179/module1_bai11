@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
+    let temp = +prompt("Nhập vào nhiệt độ hiện tại");
     do {
-        let temp = +prompt("Nhập vào nhiệt độ hiện tại");
+
         if(temp <20 ){
-            let temp = +prompt("Nhiệt độ quá thấp, hãy tăng nhiệt độ lên");
+             temp = +prompt("Nhiệt độ quá thấp, hãy tăng nhiệt độ lên");
         }
         if(temp > 100){
-            let temp = +prompt("Nhiệt độ quá cao, hãy giảm nhiệt độ");
+             temp = +prompt("Nhiệt độ quá cao, hãy giảm nhiệt độ");
         }
     } while (temp < 20 || temp > 100);
 </script>

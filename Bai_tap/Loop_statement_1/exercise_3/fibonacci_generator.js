@@ -9,11 +9,12 @@ function fibonacci(){
             document.writeln(1);
             document.writeln(1);
         } else if (num>2){
-            for (let i = 1; i <= (num/2); i++) {
+            for (let i = 1; i <= num; i++) {
                 document.writeln(a);
-                document.writeln(b);
-                a = a + b;
-                b = a + b;
+                let c = a+b;
+                a = b;
+                b = c;
+
             }
         }
              } else {
